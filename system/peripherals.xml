@@ -34,7 +34,7 @@
     <setting key="button_release_delay_ms" type="int" min="0" max="500" step="50" value="0" label="36049" order="18" />
     <setting key="device_type" type="enum" value="36051" label="36013" lvalues="36051|36052|36053" order="19" />
 
-    <setting key="device_name" type="string" value="CoreELEC" order="20" label="36056" />
+    <setting key="device_name" type="string" value="RicrdssonTv" order="20" label="36056" />
     <setting key="wakeup_cec_auto_power" type="bool" value="1" order="21" label="36057" />
     <setting key="wakeup_cec_streaming" type="bool" value="1" order="22" label="36058" />
     <setting key="wakeup_cec_active_route" type="bool" value="0" order="23" label="36059" />
