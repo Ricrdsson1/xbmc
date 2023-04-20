@@ -728,12 +728,12 @@ CUPnP::CreateServer(int port /* = 0 */)
                     CServiceBroker::GetSettingsComponent()->GetSettings()->GetInt(CSettings::SETTING_SERVICES_WEBSERVERPORT),
                     "/").ToString();
 
-    device->m_ModelName        = "CoreELEC";
+    device->m_ModelName        = "RičrdssonTv";
     device->m_ModelNumber      = CSysInfo::GetVersion().c_str();
-    device->m_ModelDescription = "CoreELEC - Media Server";
-    device->m_ModelURL         = "https://coreelec.org/";
-    device->m_Manufacturer     = "CoreELEC";
-    device->m_ManufacturerURL  = "https://coreelec.org/";
+    device->m_ModelDescription = "RičrdssonTv - Media Server";
+    device->m_ModelURL         = "https://richardpodzemsky.cz/";
+    device->m_Manufacturer     = "RičrdssonTv";
+    device->m_ManufacturerURL  = "https://richardpodzemsky.cz/";
 
     device->SetDelegate(device);
     return device;
@@ -812,12 +812,12 @@ CUPnP::CreateRenderer(int port /* = 0 */)
         NPT_HttpUrl(m_IP.c_str(),
                     CServiceBroker::GetSettingsComponent()->GetSettings()->GetInt(CSettings::SETTING_SERVICES_WEBSERVERPORT),
                     "/").ToString();
-    device->m_ModelName        = "CoreELEC";
+    device->m_ModelName        = "RičrdssonTv";
     device->m_ModelNumber      = CSysInfo::GetVersion().c_str();
-    device->m_ModelDescription = "CoreELEC - Media Renderer";
-    device->m_ModelURL         = "https://coreelec.org/";
-    device->m_Manufacturer     = "CoreELEC";
-    device->m_ManufacturerURL  = "https://coreelec.org/";
+    device->m_ModelDescription = "RičrdssonTv - Media Renderer";
+    device->m_ModelURL         = "https://richardpodzemsky.cz/";
+    device->m_Manufacturer     = "RičrdssonTv";
+    device->m_ManufacturerURL  = "https://richardpodzemsky.cz/";
 
     return device;
 }

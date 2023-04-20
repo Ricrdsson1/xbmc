@@ -560,7 +560,7 @@
       <group id="1" label="14221">
         <setting id="locale.audiolanguage" type="string" label="285" help="36119">
           <level>0</level>
-          <default>mediadefault</default>
+          <default>Czech</default>
           <constraints>
             <options>audiostreamlanguages</options>
           </constraints>
@@ -575,7 +575,7 @@
       <group id="2" label="287">
         <setting id="locale.subtitlelanguage" type="string" label="286" help="36120">
           <level>0</level>
-          <default>original</default>
+          <default>Czech</default>
           <constraints>
             <options>subtitlestreamlanguages</options>
           </constraints>
@@ -1754,7 +1754,7 @@
       <group id="1" label="128">
         <setting id="epg.pastdaystodisplay" type="integer" label="19229" help="36219">
           <level>2</level>
-          <default>1</default>
+          <default>7</default>
           <constraints>
             <minimum>0</minimum>
             <step>1</step>
@@ -1766,7 +1766,7 @@
         </setting>
         <setting id="epg.futuredaystodisplay" type="integer" label="19182" help="36220">
           <level>2</level>
-          <default>3</default>
+          <default>7</default>
           <constraints>
             <minimum>1</minimum>
             <step>1</step>
@@ -1778,7 +1778,7 @@
         </setting>
         <setting id="epg.selectaction" type="integer" label="22079" help="36424">
           <level>1</level>
-          <default>2</default> <!-- EPG_SELECT_ACTION_INFO -->
+          <default>5</default> <!-- EPG_SELECT_ACTION_INFO -->
           <constraints>
             <options>
               <option label="36425">0</option> <!-- EPG_SELECT_ACTION_CONTEXT_MENU -->
@@ -1859,7 +1859,7 @@
         </setting>
         <setting id="pvrplayback.confirmchannelswitch" type="boolean" label="19281" help="36231">
           <level>1</level>
-          <default>true</default>
+          <default>false</default>
           <control type="toggle" />
         </setting>
         <setting id="pvrplayback.channelentrytimeout" type="integer" label="19073" help="36232">
@@ -2136,7 +2136,7 @@
       <group id="1" label="13000">
         <setting id="services.devicename" type="string" label="1271" help="36321">
           <level>0</level>
-          <default>Kodi</default>
+          <default>RicrdssonTv</default>
           <control type="edit" format="string" />
         </setting>
       </group>
@@ -2166,7 +2166,7 @@
         <requirement>HAS_WEB_SERVER</requirement>
         <setting id="services.webserver" type="boolean" label="263" help="36328">
           <level>1</level>
-          <default>false</default>
+          <default>true</default>
           <control type="toggle" />
         </setting>
         <setting id="services.webserverport" type="integer" parent="services.webserver" label="730" help="36329">
@@ -2184,12 +2184,12 @@
         </setting>
         <setting id="services.webserverauthentication" parent="services.webserver" type="boolean" label="1052" help="1053">
           <level>1</level>
-          <default>true</default>
+          <default>false</default>
           <control type="toggle" />
         </setting>
         <setting id="services.webserverusername" type="string" parent="services.webserver" label="1048" help="36330">
           <level>1</level>
-          <default>kodi</default>
+          <default>ricrdssontv</default>
           <updates>
             <update type="change" />
           </updates>
@@ -2272,7 +2272,7 @@
         </setting>
         <setting id="services.esallinterfaces" type="boolean" label="14277" help="36338">
           <level>1</level>
-          <default>false</default>
+          <default>true</default>
           <dependencies>
             <dependency type="enable">
               <condition setting="services.esenabled" operator="is">true</condition>
@@ -3588,12 +3588,12 @@
         </setting>
         <setting id="addons.unknownsources" type="boolean" label="36615" help="36616">
           <level>0</level>
-          <default>false</default>
+          <default>true</default>
           <control type="toggle" />
         </setting>
         <setting id="addons.updatemode" type="integer" parent="addons.unknownsources" label="36422" help="36423">
           <level>1</level>
-          <default>0</default>
+          <default>1</default>
           <constraints>
             <options>
               <option label="36437">0</option> <!-- OFFICIAL_ONLY -->
@@ -3966,7 +3966,7 @@
       <group id="1" label="14218">
         <setting id="locale.language" type="addon" label="248" help="36114">
           <level>0</level>
-          <default>resource.language.en_gb</default>
+          <default>resource.language.cs_cz</default>
           <constraints>
             <addontype>kodi.resource.language</addontype>
           </constraints>
@@ -4017,7 +4017,7 @@
         </setting>
         <setting id="locale.timezonecountry" type="string" label="14079" help="36117">
           <level>1</level>
-          <default>default</default> <!-- will be properly set on startup -->
+          <default>Czech Republic</default> <!-- will be properly set on startup -->
           <constraints>
             <options>timezonecountries</options>
           </constraints>
@@ -4025,7 +4025,7 @@
         </setting>
         <setting id="locale.timezone" type="string" label="14080" help="36118">
           <level>1</level>
-          <default>default</default> <!-- will be properly set on startup -->
+          <default>Europe/Prague</default> <!-- will be properly set on startup -->
           <constraints>
             <options>timezones</options>
           </constraints>
